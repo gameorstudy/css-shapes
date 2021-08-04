@@ -1,3 +1,3 @@
 # readme
 
-## Examples of drawing shapes by useing css
+## Examples of drawing shapes by using css
