@@ -235,6 +235,49 @@ section {
     transform: rotate(-45deg);
 }
 
+.trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px;
+}
+
+.star {
+    margin: 50px;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(36deg);
+}
+
+.star::before {
+    content: '';
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid red;
+    transform: rotate(-36deg);
+    left: -65px;
+    top: -45px;
+}
+
+.star::after {
+    content: '';
+    position: absolute;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(-72deg);
+    left: -105px;
+    top: 3px
+}
+
 p {
     margin: 5px 0;
 }
